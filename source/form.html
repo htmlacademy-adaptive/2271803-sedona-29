@@ -11,8 +11,11 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="185" height="96"
-        alt="Логотип туристического городка в штате Аризона.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona_logo.svg" type="image/svg" width="185" height="96">
+        <source media="(min-width: 768px)" srcset="img/sedona_logo.svg" type="image/svg" width="185" height="96">
+        <img class="main-header__logo-image" src="img/sedona_logo.svg" width="185" height="96" alt="Логотип туристического городка в штате Аризона.">
+      </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle toggle" type="button">
