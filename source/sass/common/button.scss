@@ -1,0 +1,14 @@
+@use "../common/variables.scss";
+
+.button {
+  color: variables.$white;
+  font-family: variables.$font-family-base;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
