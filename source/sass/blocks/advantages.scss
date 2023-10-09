@@ -1,9 +1,68 @@
 @use "../common/variables.scss";
 
 .advantages {
-  font-family: variables.$font-family-base;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
+  width: 320px;
+  margin-bottom: 4px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  color: variables.$black;
+  background-color: #eeeeee;
+}
+
+.advantages__wrapper-blue {
+  color: variables.$white;
+  background-color: variables.$basic-blue;
+  padding: 37px 18px;
+}
+
+.advantages__wrapper {
+  padding: 24px 18px;
+}
+
+.advantages__content-title {
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__content-description {
+  text-align: center;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages__service-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 46px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style-type: none;
+  background-color: variables.$white;
+}
+
+.advantages__service-item {
+  margin-left: 65px;
+}
+
+.advantages__service-title {
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.advantages__service-description {
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
 }

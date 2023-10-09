@@ -8,6 +8,8 @@
   margin-top: 32px;
   margin-bottom: 0;
   width: 264px;
+  text-align: center;
+  color: variables.$black;
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -24,4 +26,5 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  width: 250px;
 }

@@ -1,0 +1,33 @@
+@use "../common/variables.scss";
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  width: 320px;
+  min-height: 55px;
+  background-color: variables.$basic-blue;
+  box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20);
+  text-align: center;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: variables.$white;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-nav__item {
+    background-color: variables.$white;
+  }
+
+  .main-nav__link {
+    color: variables.$black;
+  }
+}
