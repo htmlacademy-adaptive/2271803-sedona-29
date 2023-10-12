@@ -1,0 +1,19 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  top: 0;
+  left: 67px;
+  display: flex;
+  align-items: center;
+  width: 185px;
+  height: 96px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.main-header__hero-block {
+  min-height: 389px;
+}

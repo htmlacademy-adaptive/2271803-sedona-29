@@ -17,10 +17,8 @@
             alt="Логотип туристического городка в штате Аризона.">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+      <!-- Закрытое меню класс main-nav--closed, открытое main-nav--opened -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="index.html">
@@ -43,11 +41,14 @@
             </a>
           </li>
         </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
       </nav>
 
       <section class="main-header__hero-block hero-block">
         <h1 class="visually-hidden">Сайт туристического городка в штате Аризона.</h1>
-        <img class="hero-block__text" src="#" width="#" height="#"
+        <img class="hero-block__text" src="img/hero-text-index.svg" width="282" height="214"
           alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!">
       </section>
 
@@ -133,7 +134,7 @@
         <p class="search-hotels__headline">Заинтересовались?</p>
         <p class="search-hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="search-hotels__link" href="#" aria-label="Страница поиска гостиницы.">Найти гостиницу</a>
+        <a class="search-hotels__link button" href="#" aria-label="Страница поиска гостиницы.">Найти гостиницу</a>
       </section>
 
       <div class="map">

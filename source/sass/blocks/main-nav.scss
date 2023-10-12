@@ -1,5 +1,64 @@
 @use "../common/variables.scss";
 
+.main-nav {
+  min-height: 56px;
+  position: relative;
+  width: auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  margin-top: 17px;
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/sprite.svg#icon-menu");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 22.2px;
+  height: 22.2px;
+  background-image: url("../img/icon/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main-nav__list {
   padding: 0;
   margin: 0;
@@ -7,6 +66,7 @@
   font-weight: 700;
   text-transform: uppercase;
   list-style-type: none;
+  display: none;
 }
 
 .main-nav__item {
