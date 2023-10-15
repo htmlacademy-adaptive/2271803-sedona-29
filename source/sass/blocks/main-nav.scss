@@ -10,8 +10,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
-  display: block;
+  z-index: 11;
+  display: inline-block;
   margin-top: 17px;
   margin-right: 20px;
   padding: 0;
@@ -45,18 +45,60 @@
   right: 0;
   width: 23px;
   height: 22px;
-  background-image: url("../img/sprite.svg#icon-menu");
+  background-image: url("../img/icons/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
-.main-nav--opened .main-nav__toggle {
-  width: 22.2px;
-  height: 22.2px;
-  background-image: url("../img/icon/icon-cross.svg");
+@media (max-width: variables.$mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: block;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__link--active {
+    padding-right: 19px;
+    padding-left: 19px;
+    text-align: center;
+  }
+
+  .main-nav--opened .main-nav__list::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: 15;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+  }
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icons/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 5;
 }
 
 .main-nav__list {
@@ -73,13 +115,22 @@
   width: 320px;
   min-height: 55px;
   background-color: variables.$basic-blue;
-  box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.20);
   text-align: center;
 }
 
 .main-nav__link {
   text-decoration: none;
   color: variables.$white;
+  position: relative;
+  display: block;
+  padding: 17px 19px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: variables.$basic-blue;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.20);
 }
 
 @media (min-width: variables.$tablet-width) {

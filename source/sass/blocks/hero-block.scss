@@ -1,6 +1,6 @@
 .hero-block {
+  position: inherit;
   padding-top: 90px;
-  padding-left: 19px;
   background-image: image-set(url("../img/hero-mobile.webp") type("image/webp"),
       url("../img/hero-mobile.jpg") type("image/jpeg"));
   background-repeat: no-repeat;
@@ -15,5 +15,7 @@
 }
 
 .hero-block__text {
-display: block;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
