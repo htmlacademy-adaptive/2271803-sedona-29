@@ -34,7 +34,6 @@
 .advantages__content-title::after {
   counter-increment: number;
   content: "– №" counter(number) " –";
-  counter-increment: number;
   color: inherit;
   text-align: center;
   line-height: 21px;

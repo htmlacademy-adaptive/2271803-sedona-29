@@ -85,7 +85,7 @@
     z-index: 15;
     height: 7px;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 }
 
@@ -129,8 +129,8 @@
   line-height: 26px;
   text-transform: uppercase;
   background-color: variables.$basic-blue;
-  border-top: 1px solid rgba(255, 255, 255, 0.20);
-  border-bottom: 1px solid rgba(1, 1, 1, 0.20);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
 @media (min-width: variables.$tablet-width) {
