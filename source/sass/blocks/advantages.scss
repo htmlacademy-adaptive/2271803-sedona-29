@@ -29,6 +29,8 @@
 .advantages__content-title {
   text-align: center;
   margin: 0;
+  margin-bottom: 49px;
+  position: relative;
 }
 
 .advantages__content-title::after {
@@ -36,13 +38,15 @@
   content: "– №" counter(number) " –";
   color: inherit;
   text-align: center;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
   position: absolute;
-  top: 0;
-  left: 50%;
   display: block;
-  width: 100px;
+  top: 36px;
+  left: 115px;
+  width: 60px;
   height: 30px;
 }
 
