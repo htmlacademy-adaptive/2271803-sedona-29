@@ -5,8 +5,7 @@
 }
 
 .main-container__title {
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin: 32px 28px 0;
   width: 264px;
   text-align: center;
   color: variables.$black;
@@ -27,4 +26,5 @@
   text-transform: uppercase;
   text-align: center;
   width: 250px;
+  margin: 35px 35px 16px;
 }

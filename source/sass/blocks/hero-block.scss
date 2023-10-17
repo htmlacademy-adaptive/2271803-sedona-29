@@ -1,5 +1,5 @@
 .hero-block {
-  position: inherit;
+  position: relative;
   padding-top: 90px;
   background-image: image-set(url("../img/hero-mobile.webp") type("image/webp"),
       url("../img/hero-mobile.jpg") type("image/jpeg"));
@@ -12,6 +12,15 @@
     background-image: image-set(url("../img/hero-mobile@2x.webp") type("image/webp"),
         url("../img/hero-mobile@2x.jpg") type("image/jpeg"));
   }
+}
+
+.hero-block::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 320px;
+  height: 57px;
+  background-image: url("../img/hero-triangle-mobile.svg");
 }
 
 .hero-block__text {

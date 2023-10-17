@@ -1,0 +1,29 @@
+@use "../common/variables.scss";
+
+.search-hotels {
+padding: 38px 29px 49px;
+}
+
+.search-hotels__headline {
+  color: variables.$black;
+  text-align: center;
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.search-hotels__description {
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.search-hotels__link {
+  display: block;
+  min-width: 284px;
+  height: 58px;
+  padding: 10px;
+  background: variables.$basic-blue;
+}
