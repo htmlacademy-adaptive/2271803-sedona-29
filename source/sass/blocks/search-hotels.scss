@@ -1,7 +1,7 @@
 @use "../common/variables.scss";
 
 .search-hotels {
-padding: 38px 29px 49px;
+  padding: 38px 29px 49px;
 }
 
 .search-hotels__headline {
@@ -21,9 +21,9 @@ padding: 38px 29px 49px;
 }
 
 .search-hotels__link {
-  display: block;
-  min-width: 284px;
-  height: 58px;
-  padding: 10px;
+  display: inline-block;
+  min-width: 262px;
+  min-height: 58px;
+  padding: 16px 10px;
   background: variables.$basic-blue;
 }
