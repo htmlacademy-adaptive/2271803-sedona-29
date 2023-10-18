@@ -50,7 +50,7 @@
         <h1 class="visually-hidden">Сайт туристического городка в штате Аризона.</h1>
         <div class="hero-block__text">
           <img class="hero-block__text-img" src="img/hero-text-index.svg" width="282" height="214"
-          alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!">
+            alt="Welcome to the gorgeous Sedona, beacause the Grand Canyon sucks!">
         </div>
       </section>
 
@@ -134,11 +134,28 @@
         <a class="search-hotels__link button" href="#" aria-label="Страница поиска гостиницы.">Найти гостиницу</a>
       </section>
 
-      <div class="map">
-        <iframe width="320" height="350">
-        </iframe>
-        <img src="#" width="320" height="350" alt="Метка адреса на карте.">
-      </div>
+      <section class="map">
+        <iframe class="map__img map__img--nojs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601781.7953837132!2d-112.31034696184713!3d34.78720650267198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1697624982323!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg.webp, img/map-desktop.jpg@2x.webp 2x"
+              width="1200" height="350" type="image/webp">
+            <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg.jpg, img/map-desktop.jpg@2x.jpg 2x"
+              width="1200" height="350" type="image/jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg.webp, img/map-tablet.jpg@2x.webp 2x"
+              width="768" height="350" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg.jpg, img/map-tablet.jpg@2x.jpg 2x" width="768"
+              height="350" type="image/jpg">
+            <source media="(min-width: 320px)" srcset="img/map-mobile.jpg.webp, img/map-mobile.jpg@2x.webp 2x"
+              width="320" height="350" type="image/webp">
+            <img class="map__img" loading="lazy" src="img/map-mobile.jpg.jpg" srcset="img/map-mobile.jpg@2x.jpg"
+              width="320" height="350" alt="Местоположение туристического городка Седона, штат Аризона.">
+          </picture>
+        </noscript>
+      </section>
 
     </main>
 
