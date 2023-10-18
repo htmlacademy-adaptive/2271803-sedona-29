@@ -1,0 +1,32 @@
+@use "../common/variables.scss";
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background-color: variables.$basic-blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social-list__link {
+  width: 24px;
+  height: 24px;
+}
+
+.social-list__icon {
+  color: variables.$white;
+}
