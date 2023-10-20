@@ -16,6 +16,14 @@
   font-weight: 400;
   color: #333333;
   background-color: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: variables.$tablet-width;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: variables.$desktop-width;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
