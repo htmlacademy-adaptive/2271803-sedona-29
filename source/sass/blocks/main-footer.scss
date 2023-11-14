@@ -1,0 +1,22 @@
+@use "../common/variables.scss";
+
+.main-footer {
+  padding: 33px 82px;
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  row-gap: 30px;
+}
+
+.main-footer__title {
+  margin: 0 auto;
+  font-size: 21px;
+}
+
+.main-footer__social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer__copyright {
+  margin: 0 auto;
+}
