@@ -10,6 +10,7 @@
 .advantages__item {
   color: variables.$black;
   background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .advantages__item--triangle::before {
@@ -32,7 +33,10 @@
   padding-bottom: 24px;
   margin-left: 18px;
   margin-right: 18px;
-  border-bottom: 1px solid #d6d6d6;
+}
+
+.advantages__item:last-of-type {
+  border-bottom: none;
 }
 
 .advantages__content-title {
