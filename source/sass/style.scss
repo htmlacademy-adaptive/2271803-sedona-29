@@ -1,4 +1,20 @@
-@import "common/variables.scss";
-@import "common/global.scss";
-@import "common/fonts.scss";
-@import "common/visually-hidden.scss";
+@use "common/variables.scss";
+@use "common/visually-hidden.scss";
+@use "common/global.scss";
+@use "common/fonts.scss";
+@use "common/title.scss";
+@use "common/button.scss";
+//
+@use "blocks/page.scss";
+@use "blocks/main-container.scss";
+@use "blocks/main-header.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/hero-block.scss";
+@use "blocks/advantages.scss";
+@use "blocks/search-hotels.scss";
+@use "blocks/map.scss";
+@use "blocks/main-footer.scss";
+@use "blocks/social-list.scss";
+@use "blocks/copyright.scss";
+//
+
