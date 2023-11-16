@@ -2,26 +2,29 @@
 
 .main-header {
   position: relative;
+  min-height: 56px;
+  width: 100%;
 }
 
 .main-header__logo-image {
   position: absolute;
   top: 0;
-  left: 67px;
-  display: flex;
-  align-items: center;
+  left: 50%;
   width: 185px;
   height: 96px;
+  transform: translateX(-50%) scale(1);
+  transform-origin: top;
+  transition: transform 0.5s ease, opacity 0.3s ease;
   overflow: hidden;
   text-decoration: none;
+  z-index: 1;
 
-  @media (min-width: variables.$tablet-width) {
-    left: 290px;
-    z-index: 6;
+  &:hover {
+    transform: translateX(-50%) scale(1.1);
   }
 
-  @media (min-width: variables.$desktop-width) {
-    left: 507px;
+  &:active {
+    opacity: 0.8;
   }
 }
 
